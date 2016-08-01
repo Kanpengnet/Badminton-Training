@@ -1,6 +1,7 @@
 <resources>
     <string name="app_name">Badminton Training</string>
     <string name="devby">พัฒนาโดย</string>
+    <string name="title_main">โปรดเลือก Icon</string>
 
 
 </resources>
