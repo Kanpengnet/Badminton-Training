@@ -40,7 +40,7 @@ public class MainHub extends AppCompatActivity implements View.OnClickListener {
 
             case R.id.imageView2:startActivity(new Intent(MainHub.this,RulesActivity.class));
                 break;
-            case R.id.imageView3:
+            case R.id.imageView3:startActivity(new Intent(MainHub.this,VideoActivity.class));
                 break;
             case R.id.imageView4:
                 break;
