@@ -58,7 +58,7 @@ public class VideoAdapter extends BaseAdapter{
     //show View
         Picasso.with(context).load(iconStrings[i]).resize(100, 100).into(imageView);
         title.setText(titleStrings[i]);
-        detailTextView.setText(detailTextView[i]);
+        detailTextView.setText(detailStrings[i]);
 
         return view1;
     }
