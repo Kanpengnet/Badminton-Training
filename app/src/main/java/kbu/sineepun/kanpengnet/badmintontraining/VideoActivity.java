@@ -1,11 +1,13 @@
 package kbu.sineepun.kanpengnet.badmintontraining;
 
+import android.app.AlertDialog;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.ListView;
 
@@ -104,11 +106,29 @@ public class VideoActivity extends AppCompatActivity {
                 VideoAdapter videoAdapter = new VideoAdapter(context,
                         imageStrings, titleStrings, detailShortStrings);
                 myListView.setAdapter(videoAdapter);
+
+                myListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    @Override
+                    public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
+
+
+                        myAlertDialog();
+
+                    }
+                });
+
             } catch (Exception e) {
                 Log.d("kanV1", "e onPost ==> " + e.toString());
             }
 
         }   //onpost
+
+        private void myAlertDialog() {
+
+            AlertDialog.Builder builder = new AlertDialog.Builder(context);
+
+
+        }// MyAlertDialog
 
 
     }// synVideo Class
