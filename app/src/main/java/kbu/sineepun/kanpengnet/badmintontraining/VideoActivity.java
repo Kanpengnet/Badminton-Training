@@ -2,6 +2,9 @@ package kbu.sineepun.kanpengnet.badmintontraining;
 
 import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
+import android.content.Intent;
+import android.net.Uri;
 import android.os.AsyncTask;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -112,7 +115,7 @@ public class VideoActivity extends AppCompatActivity {
                     public void onItemClick(AdapterView<?> parent, View view, int i, long id) {
 
 
-                        myAlertDialog();
+                        myAlertDialog(i);
 
                     }
                 });
@@ -123,10 +126,31 @@ public class VideoActivity extends AppCompatActivity {
 
         }   //onpost
 
-        private void myAlertDialog() {
+        private void myAlertDialog(final int intIndex) {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
+            builder.setCancelable(false);
+            builder.setIcon(R.drawable.doremon48);
+            builder.setTitle(titleStrings[intIndex]);
+            builder.setMessage(detailStrings[intIndex]);
+            builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
+                    dialog.dismiss();
+                }
+            });
+            builder.setPositiveButton("Watch Video", new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, int which) {
 
+                    Intent intent = new Intent(Intent.ACTION_VIEW);
+                    intent.setData(Uri.parse(videoStrings[intIndex]));
+                    startActivity(intent);
+
+                    dialog.dismiss();
+                }
+            });
+            builder.show();
 
         }// MyAlertDialog
 
