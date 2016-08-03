@@ -82,7 +82,7 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                 }//for
             } catch (Exception e) {
                 e.printStackTrace();
-            }
+             }
         }// onPost
 
     } //SynCourt class
