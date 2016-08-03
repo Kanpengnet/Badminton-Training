@@ -16,6 +16,9 @@ import com.squareup.okhttp.OkHttpClient;
 import com.squareup.okhttp.Request;
 import com.squareup.okhttp.Response;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 public class MapsActivity extends FragmentActivity implements OnMapReadyCallback {
 
     private GoogleMap mMap;
@@ -27,7 +30,6 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
-
 
 
     }// main Method
@@ -59,13 +61,28 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
             }
         }// doInBack
 
-
-
         @Override
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
             Log.d("kanV3", "JSON ==>" + s);
+            try {
+                JSONArray jsonArray = new JSONArray(s);
+                for (int i = 0; i < jsonArray.length(); i += 1) {
+                    JSONObject jsonObject = jsonArray.getJSONObject(i);
+                    String strName = jsonObject.getString("Name");
+                    String strAddress = jsonObject.getString("Address");
+                    String strPhone = jsonObject.getString("Phone");
+                    String strLat = jsonObject.getString("Lat");
+                    String strLng = jsonObject.getString("Lng");
 
+                    LatLng latLng = new LatLng(Double.parseDouble(strLat),
+                            Double.parseDouble(strLng));
+                    courtGoogleMap.addMarker(new MarkerOptions()
+                    .position(latLng));
+                }//for
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
         }// onPost
 
     } //SynCourt class
