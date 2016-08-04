@@ -24,7 +24,6 @@ public class TwoPlayer extends AppCompatActivity {
         playerBEditText = (EditText) findViewById(R.id.editText3);
         playButton = (Button) findViewById(R.id.button3);
 
-
         playButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
