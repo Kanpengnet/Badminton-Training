@@ -47,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/linButton"
-        android:background="@drawable/bg_score">
+        android:background="@drawable/bg_score_01">
 
         <ImageView
             android:layout_width="wrap_content"

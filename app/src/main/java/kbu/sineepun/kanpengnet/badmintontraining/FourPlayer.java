@@ -50,7 +50,7 @@ public class FourPlayer extends AppCompatActivity {
                 Log.d("kanV2", "A ==>" + playerCString);
                 Log.d("kanV2", "A ==>" + playerDString);
 
-                Intent intent = new Intent(FourPlayer.this, CheckScore.class);
+                Intent intent = new Intent(FourPlayer.this, CheckScore2.class);
                 intent.putExtra("A", playerAString);
                 intent.putExtra("B", playerBString);
                 intent.putExtra("C", playerCString);
