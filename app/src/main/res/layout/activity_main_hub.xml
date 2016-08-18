@@ -19,14 +19,14 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:textColor="@color/abc_background_cache_hint_selector_material_light"
-        android:layout_marginTop="-2dp" />
+        android:layout_marginTop="0dp" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/textView4"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="15dp">
 
         <LinearLayout
             android:orientation="horizontal"

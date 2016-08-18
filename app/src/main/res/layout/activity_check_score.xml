@@ -12,37 +12,35 @@
         android:layout_alignParentEnd="false"
         android:layout_alignParentBottom="true"
         android:id="@+id/linButton"
-        android:background="@color/button_material_light">
+        android:background="#003700">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView12"
             android:layout_weight="1"
-            android:src="@drawable/manicon"
-            android:background="@color/common_plus_signin_btn_text_light_disabled" />
+            android:src="@drawable/doremon48" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView13"
             android:layout_weight="1"
-            android:src="@drawable/man2icon" />
+            android:src="@drawable/doremon48" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView14"
             android:layout_weight="1"
-            android:src="@drawable/undo"
-            android:background="@color/common_plus_signin_btn_text_light_disabled" />
+            android:src="@drawable/doremon48" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView15"
             android:layout_weight="1"
-            android:src="@drawable/reset" />
+            android:src="@drawable/doremon48" />
     </LinearLayout>
 
     <RelativeLayout
