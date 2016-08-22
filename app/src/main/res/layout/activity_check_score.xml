@@ -19,28 +19,28 @@
             android:layout_height="wrap_content"
             android:id="@+id/imageView12"
             android:layout_weight="1"
-            android:src="@drawable/doremon48" />
+            android:src="@drawable/manicon" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView13"
             android:layout_weight="1"
-            android:src="@drawable/doremon48" />
+            android:src="@drawable/man2icon" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView14"
             android:layout_weight="1"
-            android:src="@drawable/doremon48" />
+            android:src="@drawable/undo" />
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/imageView15"
             android:layout_weight="1"
-            android:src="@drawable/doremon48" />
+            android:src="@drawable/reset" />
     </LinearLayout>
 
     <RelativeLayout
