@@ -95,6 +95,7 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/imageView18"
                 android:layout_weight="1" />
+
         </LinearLayout>
 
         <TextView
@@ -117,6 +118,7 @@
             android:textColor="@color/text"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="130dp"
-            android:layout_below="@+id/imageView16" />
+            android:layout_below="@+id/imageView16"
+            android:layout_alignParentStart="false" />
     </RelativeLayout>
 </RelativeLayout>

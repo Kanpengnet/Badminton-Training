@@ -45,7 +45,8 @@
                 android:hint="Player A"
                 android:gravity="center_horizontal"
                 android:textColorHint="@color/text"
-                android:textColor="@color/text" />
+                android:textColor="@color/text"
+                android:singleLine="true" />
 
             <EditText
                 android:layout_width="100dp"
@@ -54,7 +55,8 @@
                 android:hint="Player B"
                 android:gravity="center_horizontal"
                 android:textColorHint="@color/text"
-                android:textColor="@color/text" />
+                android:textColor="@color/text"
+                android:singleLine="true" />
         </LinearLayout>
 
         <LinearLayout
@@ -74,7 +76,8 @@
                 android:hint="Player C"
                 android:gravity="center_horizontal"
                 android:textColorHint="@color/text"
-                android:textColor="@color/text" />
+                android:textColor="@color/text"
+                android:singleLine="true" />
 
             <EditText
                 android:layout_width="100dp"
@@ -83,7 +86,8 @@
                 android:hint="Player D"
                 android:gravity="center_horizontal"
                 android:textColorHint="@color/text"
-                android:textColor="@color/text" />
+                android:textColor="@color/text"
+                android:singleLine="true" />
         </LinearLayout>
     </RelativeLayout>
 </RelativeLayout>

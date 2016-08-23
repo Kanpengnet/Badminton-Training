@@ -9,7 +9,7 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class CheckScore extends AppCompatActivity {
+public class CheckScore2 extends AppCompatActivity {
 
 
     //explicit
@@ -24,22 +24,27 @@ public class CheckScore extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_score);
+        setContentView(R.layout.activity_check_score2);
 
         //Bind Widget
-        playerATextView = (TextView) findViewById(R.id.textView20);
-        playerBTextView = (TextView) findViewById(R.id.textView21);
-        scoreAtextView = (TextView) findViewById(R.id.textView18);
-        scoreBtextView = (TextView) findViewById(R.id.textView19);
-        addScoreAImagerView = (ImageView) findViewById(R.id.imageView17);
-        addScoreBImageView = (ImageView) findViewById(R.id.imageView18);
+        playerATextView = (TextView) findViewById(R.id.textView24);
+        playerBTextView = (TextView) findViewById(R.id.textView26);
+        playerCTextView = (TextView) findViewById(R.id.textView25);
+        playerDTextView = (TextView) findViewById(R.id.textView27);
+        scoreAtextView = (TextView) findViewById(R.id.textView26);
+        scoreBtextView = (TextView) findViewById(R.id.textView26);
+        addScoreAImagerView = (ImageView) findViewById(R.id.imageView22);
+        addScoreBImageView = (ImageView) findViewById(R.id.imageView23);
 
         //Show Player
         playerAString = getIntent().getStringExtra("A");
         playerBString = getIntent().getStringExtra("B");
+        playerCString = getIntent().getStringExtra("C");
+        playerDString = getIntent().getStringExtra("D");
         playerATextView.setText(playerAString);
         playerBTextView.setText(playerBString);
-
+        playerCTextView.setText(playerCString);
+        playerDTextView.setText(playerDString);
 
         //Click ADD scoreA
         addScoreAImagerView.setOnClickListener(new View.OnClickListener() {
@@ -79,9 +84,9 @@ public class CheckScore extends AppCompatActivity {
         int intShowScore = 0;
         switch (index) {
             case 0:
-            scoreAnInt += 1;
-            intShowScore = scoreAnInt;
-            break;
+                scoreAnInt += 1;
+                intShowScore = scoreAnInt;
+                break;
             case 1:
                 scoreBAnInt += 1;
                 intShowScore = scoreBAnInt;
