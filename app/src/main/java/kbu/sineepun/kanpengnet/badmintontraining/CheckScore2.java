@@ -31,10 +31,10 @@ public class CheckScore2 extends AppCompatActivity {
         playerBTextView = (TextView) findViewById(R.id.textView26);
         playerCTextView = (TextView) findViewById(R.id.textView25);
         playerDTextView = (TextView) findViewById(R.id.textView27);
-        scoreAtextView = (TextView) findViewById(R.id.textView26);
-        scoreBtextView = (TextView) findViewById(R.id.textView26);
-        addScoreAImagerView = (ImageView) findViewById(R.id.imageView22);
-        addScoreBImageView = (ImageView) findViewById(R.id.imageView23);
+        scoreAtextView = (TextView) findViewById(R.id.textView22);
+        scoreBtextView = (TextView) findViewById(R.id.textView23);
+        addScoreAImagerView = (ImageView) findViewById(R.id.imageView26);
+        addScoreBImageView = (ImageView) findViewById(R.id.imageView27);
 
         //Show Player
         playerAString = getIntent().getStringExtra("A");

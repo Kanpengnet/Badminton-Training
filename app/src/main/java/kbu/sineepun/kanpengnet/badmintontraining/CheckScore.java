@@ -14,10 +14,9 @@ public class CheckScore extends AppCompatActivity {
 
     //explicit
     private ImageView addScoreAImagerView, addScoreBImageView;
-    private TextView playerATextView, playerBTextView,playerCTextView,playerDTextView
-            ,scoreAtextView,scoreBtextView;
+    private TextView playerATextView, playerBTextView,scoreAtextView,scoreBtextView;
 
-    private  String playerAString, playerBString ,playerCString, playerDString;
+    private  String playerAString, playerBString;
     private int scoreAnInt = 0, scoreBAnInt = 0;
     private  boolean statusABoolean = true;//true สภาวะปกติ false สภาวะดิว
 
