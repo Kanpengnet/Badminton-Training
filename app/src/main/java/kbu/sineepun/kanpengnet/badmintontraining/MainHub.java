@@ -56,6 +56,7 @@ public class MainHub extends AppCompatActivity implements View.OnClickListener {
             case R.id.imageView6:
                 break;
             case R.id.imageView7:
+                startActivity(new Intent(MainHub.this,DeveloperActivity.class));
                 break;
 
         }// switch

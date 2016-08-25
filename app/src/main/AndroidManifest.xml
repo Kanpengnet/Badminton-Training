@@ -60,7 +60,8 @@
         <activity
             android:name=".FourPlayer"
             android:screenOrientation="portrait" />
-        <activity android:name=".CheckScore2"></activity>
+        <activity android:name=".CheckScore2" />
+        <activity android:name=".DeveloperActivity"></activity>
     </application>
 
 </manifest>
