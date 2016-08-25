@@ -16,7 +16,8 @@
         android:id="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_above="@+id/textView"
-        android:layout_marginBottom="15dp" />
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/kbuicon" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -60,4 +61,11 @@
         android:textStyle="bold"
         android:layout_centerHorizontal="true"
         android:textColor="@color/text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/logo_kbu" />
 </RelativeLayout>

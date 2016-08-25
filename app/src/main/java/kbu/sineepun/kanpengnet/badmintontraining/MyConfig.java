@@ -8,7 +8,7 @@ public class MyConfig {
     //Explicit
     private String team1String = "นายกาน  เพ็งเนตร";
     private String team2String = "นางสาวสิณีพรรณ  สร้อยพลู";
-    private int logoAnInt = R.drawable.logo_01;
+    private int logoAnInt = R.drawable.kbuicon;
 
     public String getTeam1String() {
         return team1String;
