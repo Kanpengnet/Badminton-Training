@@ -38,7 +38,7 @@ public class SplashScreen extends AppCompatActivity {
         }, 5000);
 
         //Sound Effect
-        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.intro_tata);
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.load);
     mediaPlayer.start();
 
 

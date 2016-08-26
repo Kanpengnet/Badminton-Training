@@ -62,7 +62,7 @@ public class CheckScore extends AppCompatActivity {
     }//main method
 
     private void soundEffect() {
-        final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.phonton1);
+        final MediaPlayer mediaPlayer = MediaPlayer.create(this,R.raw.button);
         mediaPlayer.start();
 
         mediaPlayer.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
