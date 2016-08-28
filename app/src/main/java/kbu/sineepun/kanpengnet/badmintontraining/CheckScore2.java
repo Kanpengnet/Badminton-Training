@@ -128,7 +128,7 @@ public class CheckScore2 extends AppCompatActivity {
     private void alertScore(String strwin, int intScoreWin, int intScoreLost) {
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setIcon(R.drawable.doremon48);
+        builder.setIcon(R.drawable.nonglukbad);
         builder.setTitle("ยินดีในชัยชนะ คุณ " + strwin);
         builder.setMessage("คะแนนของคุณ " +
                 Integer.toString(intScoreWin) +

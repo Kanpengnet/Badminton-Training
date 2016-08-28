@@ -130,7 +130,7 @@ public class VideoActivity extends AppCompatActivity {
 
             AlertDialog.Builder builder = new AlertDialog.Builder(context);
             builder.setCancelable(false);
-            builder.setIcon(R.drawable.doremon48);
+            builder.setIcon(R.drawable.nonglukbad);
             builder.setTitle(titleStrings[intIndex]);
             builder.setMessage(detailStrings[intIndex]);
             builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {

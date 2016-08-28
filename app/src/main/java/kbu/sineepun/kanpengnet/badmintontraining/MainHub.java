@@ -67,7 +67,7 @@ public class MainHub extends AppCompatActivity implements View.OnClickListener {
 
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
         builder.setCancelable(false);
-        builder.setIcon(R.drawable.doremon48);
+        builder.setIcon(R.drawable.nonglukbad);
         builder.setTitle("นับคะแนน");
         builder.setMessage("กรุณาเลือกประเภทการแข่งขัน คู่ หรือ เดี่ยว");
         builder.setNegativeButton("คู่", new DialogInterface.OnClickListener() {
