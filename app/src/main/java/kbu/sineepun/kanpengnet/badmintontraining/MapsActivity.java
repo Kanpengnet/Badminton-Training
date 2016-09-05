@@ -79,7 +79,8 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
                             Double.parseDouble(strLng));
                     courtGoogleMap.addMarker(new MarkerOptions()
                     .position(latLng)
-                    .title(strName));
+                    .title(strName)
+                    .snippet(strPhone));
                 }//for
             } catch (Exception e) {
                 e.printStackTrace();
