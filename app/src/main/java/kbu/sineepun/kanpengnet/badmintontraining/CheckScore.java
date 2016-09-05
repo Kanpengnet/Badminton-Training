@@ -51,7 +51,23 @@ public class CheckScore extends AppCompatActivity {
         undoImageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                //Check Log
+                Log.d("5SepV2", "Last stringArrayList(" +
+                        (stringArrayList.size() - 1 + ")==>" +
+                                stringArrayList.get(stringArrayList.size()-1)));
 
+                switch (Integer.parseInt(stringArrayList.get(stringArrayList.size()-1)))
+                {
+                    case 0:// Decrease ScoreA
+                        scoreAnInt -= 2;
+                        changScore(scoreAtextView,0);
+                        break;
+                    case 1:// Decrease ScoreB
+                        scoreBAnInt -= 2;
+                        changScore(scoreBtextView,1);
+                        break;
+                }// switch
+                stringArrayList.remove(stringArrayList.size() - 1);
 
             }// onclick
         });
@@ -93,6 +109,11 @@ public class CheckScore extends AppCompatActivity {
 
         stringArrayList.add(strIndex);
         Log.d("5SepV1", "Count of ArrayList ==>" + stringArrayList.size());
+        undoStrings = new String[stringArrayList.size()];
+        for (int i=0;i<stringArrayList.size();i++) {
+            undoStrings[i] = stringArrayList.get(i);
+            Log.d("5SepV1", "undoSting(" + i + ")=" + undoStrings[i]);
+        }
 
 
     }// addMyArrayList
