@@ -13,7 +13,8 @@ public class CheckScore extends AppCompatActivity {
 
 
     //explicit
-    private ImageView addScoreAImagerView, addScoreBImageView;
+    private ImageView addScoreAImagerView, addScoreBImageView,
+            undoImageView,clearImageView;
     private TextView playerATextView, playerBTextView,scoreAtextView,scoreBtextView;
 
     private  String playerAString, playerBString;
@@ -32,6 +33,8 @@ public class CheckScore extends AppCompatActivity {
         scoreBtextView = (TextView) findViewById(R.id.textView19);
         addScoreAImagerView = (ImageView) findViewById(R.id.imageView17);
         addScoreBImageView = (ImageView) findViewById(R.id.imageView18);
+        undoImageView = (ImageView) findViewById(R.id.imageView14);
+        clearImageView = (ImageView) findViewById(R.id.imageView15);
 
         //Show Player
         playerAString = getIntent().getStringExtra("A");
@@ -39,7 +42,17 @@ public class CheckScore extends AppCompatActivity {
         playerATextView.setText(playerAString);
         playerBTextView.setText(playerBString);
 
-
+        //Click Clearscore
+        clearImageView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                scoreBAnInt = -1;
+                scoreAnInt = -1;
+                changScore(scoreAtextView, 0);
+                changScore(scoreBtextView, 1);
+                soundEffect();
+            } // onclick
+        });
         //Click ADD scoreA
         addScoreAImagerView.setOnClickListener(new View.OnClickListener() {
             @Override
