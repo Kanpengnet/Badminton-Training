@@ -22,7 +22,6 @@ import org.json.JSONArray;
 import org.json.JSONObject;
 
 public class VideoActivity extends AppCompatActivity {
-
     //Explicit
     private ListView listView;
 
