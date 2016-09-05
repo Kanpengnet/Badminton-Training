@@ -54,6 +54,7 @@ public class MainHub extends AppCompatActivity implements View.OnClickListener {
                 startActivity(new Intent(MainHub.this, MapsActivity.class));
                 break;
             case R.id.imageView6:
+                startActivity(new Intent(MainHub.this,TestHub.class));
                 break;
             case R.id.imageView7:
                 startActivity(new Intent(MainHub.this,DeveloperActivity.class));
